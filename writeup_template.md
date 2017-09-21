@@ -61,7 +61,7 @@ Following images depicts the results of the binary image after using `color_thre
 The code for my perspective transform is in function called `corners_unwarp()`,  in the 2nd code cell of the IPython notebook in the file `advanced_lane_finding.ipynb`.  The `corners_unwarp()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points. 
 I chose the hardcode the source and destination points in the following manner:
 
-```python
+``python
 src = np.float32(
 [[(img_size[0] / 2) - 55, img_size[1] / 2 + 100],
 [((img_size[0] / 6) - 10), img_size[1]],
@@ -112,7 +112,7 @@ I implemented this step in function `my_pipeline()`.
 
 Once I have a good measurement of the line positions in warped space, I project the result back down onto the road. Let's suppose, we have a warped binary image called `binary_warped`, and you have fit the lines with a polynomial and have arrays called `ploty`, `left_fitx` and `right_fitx`, which represent the x and y pixel values of the lines. You can then project those lines onto the original image as follows:
 
-```
+``
 warp_zero = np.zeros_like(warped).astype(np.uint8)
 color_warp = np.dstack((warp_zero, warp_zero, warp_zero))
 
@@ -146,5 +146,5 @@ Here's a [link to my video result](./project_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+There is a room for improvement for harder vidoes. 
 
