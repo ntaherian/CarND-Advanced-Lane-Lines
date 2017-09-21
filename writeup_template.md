@@ -146,5 +146,5 @@ Here's a [link to my video result](./project_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-There is a room for improvement for harder vidoes. 
+The problem occur in the areas where lane line aren't as vivid to get detected by my color threshold function. like for example in the shaded areas. The color thresholding function should get improved for this matter.
 
