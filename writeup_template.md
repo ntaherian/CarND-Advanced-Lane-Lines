@@ -27,7 +27,7 @@ The goals / steps of this project are the following:
 [image4]: ./Undistorted_Warped_Image_road.jpg "Warp Example"
 [image5]: ./lane-line_pixels.jpg "Fit Visual"
 [image6]: ./result.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
+[video1]: ./project_out.mp4 "Video"
 
 
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
